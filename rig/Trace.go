@@ -12,7 +12,7 @@ var C2 float64
 var C3 float64
 
 //Trace
-//start {x, vx, y, vy, z, vz} in mm and mm/s
+//start {x, y, z, vx, vy, vz} in mm and mm/s
 //dist distance from SAMURAI center to FDC2(K) plane in mm
 //angle angle fo FDC2(K) in degree
 //h step length in s (if m/q = 1)
@@ -48,7 +48,7 @@ func Trace(start [6]float64, dist float64, angle float64, h float64, bmap []floa
 }
 
 //TraceWithPath
-//start {x, vx, y, vy, z, vz} in mm and mm/s
+//start {x, y, z, vx, vy, vz} in mm and mm/s
 //dist distance from SAMURAI center to FDC2(K) plane in mm
 //angle angle fo FDC2(K) in degree
 //h step length in s (if m/q = 1)
