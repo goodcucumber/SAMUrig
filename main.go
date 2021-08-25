@@ -208,7 +208,7 @@ func main() {
 	bmp0 := codec.Load("bmap.bin")
 	if bmp0.BX == nil {
 		fmt.Fprintln(os.Stderr, "Make field binary:")
-		bmp0 = codec.Encode("../rig/magrk/magnet/180703-1,40T-3000.table", "../rig/magrk/magnet/180703-1,45T-3000.table", 467.0/500.0, "bmap.bin")
+		bmp0 = codec.Encode("180703-1,40T-3000.table", "180703-1,45T-3000.table", 400.0/500.0, "bmap.bin")
 	}
 	
 	bmp := bmp0.Backend
